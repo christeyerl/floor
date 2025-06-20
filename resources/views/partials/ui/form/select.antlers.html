@@ -1,0 +1,19 @@
+<div class="{{ class }}">
+    <label
+        for="{{ id }}"
+        class="font-medium"
+    >
+        {{ label }}
+        {{ if required }}
+            <span class="text-red-500">*</span>
+        {{ /if }}
+    </label>
+    <select
+        id="{{ id }}"
+        name="{{ name }}"
+        class="w-full border border-zinc-300 px-5 py-3 focus:border-zinc-800 focus:outline-0"
+        {{ required ? 'required' : '' }}
+    >
+        {{ slot }}
+    </select>
+</div>

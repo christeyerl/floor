@@ -1,0 +1,128 @@
+hide: true
+title: Page/Services
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+      -
+        display: Content
+        fields:
+          -
+            handle: hero
+            field:
+              type: section
+              display: Hero
+          -
+            handle: hero_heading
+            field:
+              type: text
+              display: Heading
+          -
+            handle: hero_subheading
+            field:
+              type: textarea
+              display: Subheading
+          -
+            handle: services
+            field:
+              type: section
+              display: Services
+          -
+            handle: services_list
+            field:
+              type: grid
+              display: Services
+              mode: stacked
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: description
+                  field:
+                    type: textarea
+                    display: Description
+                -
+                  handle: features
+                  field:
+                    type: list
+                    display: Features
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: Image
+                -
+                  handle: link
+                  field:
+                    collections:
+                      - pages
+                    type: link
+                    display: Link
+          -
+            handle: cta
+            field:
+              type: section
+              display: CTA
+          -
+            handle: cta_heading
+            field:
+              type: text
+              display: Heading
+          -
+            handle: cta_subheading
+            field:
+              type: textarea
+              display: Subheading
+          -
+            handle: cta_link
+            field:
+              type: link
+              display: Link
+          -
+            handle: cta_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Image
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: template_field
+            field:
+              blueprint: true
+              folder: templates/pages
+              type: template
+              display: 'Template Field'

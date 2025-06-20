@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {{ partial:layout.meta }}
+
+        {{ vite src="resources/js/site.js|resources/css/site.css" }}
+
+        {{ partial:layout.analytics }}
+
+        {{ stack:head }}
+    </head>
+
+    <body>
+        {{ partial:layout.header }}
+
+        {{ template_content }}
+
+        {{ partial:layout.footer }}
+
+        {{ stack:footer }}
+    </body>
+</html>

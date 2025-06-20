@@ -1,0 +1,8 @@
+<{{ href ? 'a' : 'button' }}
+    {{ href | attribute:href }}
+    {{ target | attribute:target }}
+    {{ type | attribute:type }}
+    class="relative isolate inline-flex cursor-pointer items-center justify-center gap-x-2 bg-zinc-950 px-12 py-5 text-lg/none text-white transition-all duration-200 hover:bg-zinc-800"
+>
+    {{ slot }}
+</{{ href ? 'a' : 'button' }}>

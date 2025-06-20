@@ -1,0 +1,177 @@
+hide: true
+title: Page/Home
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+      -
+        display: Content
+        fields:
+          -
+            handle: hero
+            field:
+              type: section
+              display: Hero
+          -
+            handle: hero_heading
+            field:
+              type: text
+              display: Heading
+          -
+            handle: hero_paragraph
+            field:
+              type: textarea
+              display: Paragraph
+          -
+            handle: hero_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Image
+          -
+            handle: about
+            field:
+              type: section
+              display: About
+          -
+            handle: about_heading
+            field:
+              type: text
+              display: Heading
+          -
+            handle: about_paragraph
+            field:
+              type: textarea
+              display: Paragraph
+          -
+            handle: about_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Image
+          -
+            handle: services
+            field:
+              type: section
+              display: Services
+          -
+            handle: services_heading
+            field:
+              type: text
+              display: Heading
+          -
+            handle: services_paragraph
+            field:
+              type: textarea
+              display: Paragraph
+          -
+            handle: services_list
+            field:
+              mode: stacked
+              type: grid
+              display: Services
+              fields:
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                -
+                  handle: description
+                  field:
+                    type: textarea
+                    display: Description
+                -
+                  handle: features
+                  field:
+                    type: list
+                    display: Features
+                -
+                  handle: image
+                  field:
+                    container: assets
+                    type: assets
+                    display: Image
+                    max_files: 1
+                -
+                  handle: link
+                  field:
+                    type: link
+                    display: Link
+          -
+            handle: cta
+            field:
+              type: section
+              display: CTA
+          -
+            handle: cta_heading
+            field:
+              type: text
+              display: Heading
+          -
+            handle: cta_paragraph
+            field:
+              type: textarea
+              display: Paragraph
+          -
+            handle: cta_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Image
+          -
+            handle: cta_link
+            field:
+              type: link
+              display: Link
+          -
+            handle: gallery
+            field:
+              type: section
+              display: Gallery
+          -
+            handle: gallery_list
+            field:
+              mode: grid
+              container: assets
+              type: assets
+              display: Gallery
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              folder: templates/pages
+              blueprint: true

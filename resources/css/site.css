@@ -1,0 +1,25 @@
+@import url('https://fonts.bunny.net/css?family=dm-sans:400,500,600,700');
+
+@import 'tailwindcss';
+
+@theme {
+    --font-dm: 'DM Sans', 'sans-serif';
+
+    --color-delft: #27316c;
+}
+
+@layer base {
+    body {
+        @apply font-dm selection:bg-zinc-200 selection:text-zinc-500;
+    }
+}
+
+@layer components {
+    .link {
+        @apply bg-gradient-to-r from-current to-current bg-[length:0%_1px] bg-left-bottom bg-no-repeat transition-all duration-700 ease-out hover:bg-[length:100%_1px];
+    }
+
+    [x-cloak] {
+        @apply hidden!;
+    }
+}

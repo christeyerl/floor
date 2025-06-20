@@ -1,0 +1,41 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              type: text
+              display: Name
+          -
+            handle: phone
+            field:
+              input_type: tel
+              type: text
+              display: Phone
+          -
+            handle: email
+            field:
+              input_type: email
+              type: text
+              display: Email
+          -
+            handle: service
+            field:
+              type: text
+              display: Service
+              width: 75
+          -
+            handle: area
+            field:
+              input_type: number
+              type: text
+              display: Area
+              width: 25
+          -
+            handle: message
+            field:
+              type: textarea
+              display: Message

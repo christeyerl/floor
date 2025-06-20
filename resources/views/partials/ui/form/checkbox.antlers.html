@@ -1,0 +1,13 @@
+<label
+    for="{{ id }}"
+    class="{{ class }} flex items-center gap-2"
+>
+    <input
+        id="{{ id }}"
+        name="{{ name }}"
+        type="checkbox"
+        class="size-5 accent-delft focus:ring-delft"
+        {{ required ? 'required' : '' }}
+    />
+    <span>{{ label }}</span>
+</label>

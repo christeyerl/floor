@@ -1,0 +1,60 @@
+<main>
+    {{ partial:sections.hero heading="Kontakty" subheading="Pre viac informácií nás neváhajte kontaktovať" }}
+
+    <section id="form">
+        <div class="mx-auto max-w-7xl px-6 py-28">
+            <div class="grid grid-cols-2 items-center gap-20">
+                <div class="space-y-10">
+                    <div class="space-y-2">
+                        <h2 class="text-5xl/tight font-medium text-balance">Napíšte nám</h2>
+                        <p class="text-2xl text-balance text-zinc-700">
+                            Ak máte akékoľvek otázky, nápady, sťažnosti, napíšte nám pomocou formuláru.
+                        </p>
+                    </div>
+                    {{ partial:forms.contact }}
+                </div>
+                <div>
+                    <img
+                        src="/assets/photos/obyvacia-izba-1.webp"
+                        alt=""
+                        class="aspect-3/4 size-full object-cover"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="mx-auto max-w-7xl px-6 py-28">
+            <dl class="grid grid-cols-3 gap-20">
+                <div class="space-y-2 text-center">
+                    <dt class="text-xl font-medium">Adresa</dt>
+                    <dd class="text-lg">Trstín 459, Trstín</dd>
+                </div>
+                <div class="space-y-2 text-center">
+                    <dt class="text-xl font-medium">Email</dt>
+                    <dd class="text-lg">
+                        <a
+                            href="mailto:otorm@otorm.sk"
+                            class="link"
+                        >
+                            otorm@otorm.sk
+                        </a>
+                    </dd>
+                </div>
+                <div class="space-y-2 text-center">
+                    <dt class="text-xl font-medium">Telefón</dt>
+                    <dd class="text-lg">
+                        <a
+                            href="tel:+421905513132"
+                            class="link"
+                        >
+                            +421 905 513 132
+                        </a>
+                    </dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+
+</main>

@@ -1,0 +1,16 @@
+<div class="{{ class }}">
+    <label for="{{ id }}">
+        {{ label }}
+        {{ if required }}
+            <span class="text-red-500">*</span>
+        {{ /if }}
+    </label>
+    <textarea
+        id="{{ id }}"
+        name="{{ name }}"
+        placeholder="{{ placeholder }}"
+        rows="4"
+        class="w-full border border-zinc-300 px-5 py-3 focus:border-zinc-800 focus:outline-0"
+        {{ required ? 'required' : '' }}
+    ></textarea>
+</div>

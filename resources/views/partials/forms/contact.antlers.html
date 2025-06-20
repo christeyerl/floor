@@ -1,0 +1,41 @@
+{{ form:contact }}
+    {{ if errors }}
+        <div class="mb-2 rounded-md border-2 border-red-500 p-2 text-red-600">
+            {{ errors }}
+                <p>{{ value }}</p>
+            {{ /errors }}
+        </div>
+    {{ /if }}
+    {{ if success }}
+        <div class="mb-2 rounded-md border-2 border-green-500 p-2 text-green-600">
+            <p>Ďakujeme za vašu správu.</p>
+        </div>
+    {{ /if }}
+    <input
+        type="text"
+        name="address"
+        class="hidden"
+    />
+
+    <div class="grid grid-cols-6 gap-6">
+        {{ partial:ui.form.select label="Služba" id="service" name="service" class="col-span-4" }}
+            <option value="">Vyberte službu</option>
+            <option value="Interiérové podlahy">Interiérové podlahy</option>
+            <option value="Priemyselné podlahy">Priemyselné podlahy</option>
+            <option value="Exteriérové povrchy">Exteriérové povrchy</option>
+            <option value="Iné služby">Iné služby</option>
+        {{ /partial:ui.form.select }}
+        {{ partial:ui.form.input label="Rozloha (m²)" id="area" name="area" type="number" class="col-span-2" }}
+        {{ partial:ui.form.input label="Meno" id="name" name="name" type="text" autocomplete="name" required="true" class="col-span-full" }}
+        {{ partial:ui.form.input label="Telefón" id="phone" name="phone" type="tel" autocomplete="tel" required="true" class="col-span-3" }}
+        {{ partial:ui.form.input label="Email" id="email" name="email" type="email" autocomplete="email" required="true" class="col-span-3" }}
+        {{ partial:ui.form.textarea label="Správa" id="message" name="message" required="true" class="col-span-full" }}
+        {{ partial:ui.form.checkbox label="Súhlasím so spracovaním osobných údajov." id="consent" name="consent" class="col-span-full" }}
+    </div>
+
+    <div class="mt-8">
+        {{ partial:ui.button type="submit" }}
+            Odoslať
+        {{ /partial:ui.button }}
+    </div>
+{{ /form:contact }}

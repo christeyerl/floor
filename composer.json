@@ -8,7 +8,7 @@
         "php": "^8.4",
         "laravel/framework": "^12.19.3",
         "laravel/tinker": "^2.10.1",
-        "statamic/cms": "^5.57"
+        "statamic/cms": "^5.58"
     },
     "require-dev": {
         "laravel/pint": "^1.22.1",

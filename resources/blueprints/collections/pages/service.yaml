@@ -86,6 +86,23 @@ tabs:
               type: assets
               display: Image
               max_files: 1
+  meta:
+    display: Meta
+    sections:
+      -
+        fields:
+          -
+            import: utilities.meta
+      -
+        display: 'Open Graph'
+        fields:
+          -
+            import: utilities.open_graph
+      -
+        display: Sitemap
+        fields:
+          -
+            import: utilities.sitemap
   sidebar:
     display: Sidebar
     sections:

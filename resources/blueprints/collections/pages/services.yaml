@@ -99,6 +99,23 @@ tabs:
               container: assets
               type: assets
               display: Image
+  meta:
+    display: Meta
+    sections:
+      -
+        fields:
+          -
+            import: utilities.meta
+      -
+        display: 'Open Graph'
+        fields:
+          -
+            import: utilities.open_graph
+      -
+        display: Sitemap
+        fields:
+          -
+            import: utilities.sitemap
   sidebar:
     display: Sidebar
     sections:
@@ -120,9 +137,9 @@ tabs:
               listable: false
               localizable: true
           -
-            handle: template_field
+            handle: template
             field:
+              type: template
+              display: Template
               blueprint: true
               folder: templates/pages
-              type: template
-              display: 'Template Field'

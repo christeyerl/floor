@@ -1,0 +1,5 @@
+title: SEO
+data:
+  og_image: open-graph.png
+  sitemap_collections:
+    - pages

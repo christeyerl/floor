@@ -14,6 +14,23 @@ tabs:
                 - required
       -
         display: Content
+  meta:
+    display: Meta
+    sections:
+      -
+        fields:
+          -
+            import: utilities.meta
+      -
+        display: 'Open Graph'
+        fields:
+          -
+            import: utilities.open_graph
+      -
+        display: Sitemap
+        fields:
+          -
+            import: utilities.sitemap
   sidebar:
     display: Sidebar
     sections:
@@ -39,6 +56,4 @@ tabs:
             field:
               type: template
               display: Template
-              localizable: true
-              folder: templates/pages
-              blueprint: true
+              folder: templates

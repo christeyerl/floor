@@ -1,8 +1,0 @@
-name: Admin
-super: true
-id: 1ec8d3d5-6325-4eba-84c3-93afa6a0a824
-password_hash: $2y$12$8aInsnNcYYdjSzamBVZnRONPnHtD7ClYmb9xn0nCDekvoInQLOzG6
-preferences:
-  collections:
-    pages:
-      after_save: continue_editing

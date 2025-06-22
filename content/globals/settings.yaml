@@ -1,0 +1,14 @@
+title: Settings
+data:
+  site_title: Otorm
+  separator: '|'
+  organization: 'OTORM, s.r.o.'
+  phone: '+421 905 513 132'
+  email: otorm@otorm.sk
+  theme_light_color: '#27316c'
+  theme_dark_color: '#27316c'
+  favicon_svg: favicon.svg
+  favicon_png: favicon.png
+  marker: marker
+  analytics_fathom: false
+  analytics_google: false

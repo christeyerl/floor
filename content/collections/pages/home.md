@@ -58,5 +58,5 @@ cta_subheading: 'Radi vám poradíme s výberom a pripravíme riešenie na mieru
 cta_image: photos/garaz-2.webp
 cta_link: 'entry::6aea9549-f5c4-480f-8d0f-a850e6e0822d'
 updated_by: 1ec8d3d5-6325-4eba-84c3-93afa6a0a824
-updated_at: 1750321000
+updated_at: 1750606534
 ---

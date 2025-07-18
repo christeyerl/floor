@@ -21,13 +21,19 @@
                     {{ gallery_list }}
                         <a
                             href="{{ url }}"
-                            class="chocolat block overflow-hidden"
+                            title="{{ alt }}"
+                            class="chocolat block break-inside-avoid-column"
                         >
-                            <img
-                                src="{{ url }}"
-                                alt="{{ alt }}"
-                                class="w-full transition duration-500 hover:scale-105"
-                            />
+                            <div class="overflow-hidden">
+                                <img
+                                    src="{{ url }}"
+                                    alt="{{ alt }}"
+                                    class="w-full transition duration-500 hover:scale-105"
+                                />
+                            </div>
+                            {{ if alt }}
+                                <p class="mt-1 text-zinc-700">{{ alt }}</p>
+                            {{ /if }}
                         </a>
                     {{ /gallery_list }}
                 </div>

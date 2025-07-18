@@ -120,7 +120,7 @@ tabs:
               type: text
               display: Heading
           -
-            handle: cta_paragraph
+            handle: cta_subheading
             field:
               type: textarea
               display: Paragraph

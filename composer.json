@@ -6,9 +6,10 @@
     "keywords": ["statamic"],
     "require": {
         "php": "^8.4",
-        "laravel/framework": "^12.20.0",
+        "anakadote/statamic-recaptcha": "^2.0",
+        "laravel/framework": "^12.21.0",
         "laravel/tinker": "^2.10.1",
-        "statamic/cms": "^5.59"
+        "statamic/cms": "^5.60"
     },
     "require-dev": {
         "laravel/pint": "^1.24.0",

@@ -63,27 +63,27 @@
                 </p>
             </div>
             <div class="mt-20 grid grid-cols-1 items-center gap-x-10 gap-y-32 sm:grid-cols-2 sm:grid-rows-2">
-                {{ services_list }}
+                {{ services_entries }}
                     <div class="even:row-span-2 lg:px-16 xl:px-24">
                         <a
-                            href="{{ link:url }}"
+                            href="{{ url }}"
                             class="block space-y-5"
                         >
                             <div class="overflow-hidden">
                                 <img
-                                    src="{{ image:url }}"
-                                    alt="{{ image:alt }}"
+                                    src="{{ thumbnail:url }}"
+                                    alt="{{ thumbnail:alt }}"
                                     class="aspect-5/6 size-full transition duration-500 hover:scale-105"
                                 />
                             </div>
                             <div class="space-y-3">
                                 <h3 class="text-xl font-medium text-zinc-900 lg:text-2xl">
-                                    {{ heading }}
+                                    {{ title }}
                                 </h3>
                                 <p class="text-lg text-zinc-800 lg:text-xl">
                                     {{ description }}
                                 </p>
-                                <ul class="list-inside list-disc text-lg text-zinc-700 lg:text-xl">
+                                <ul class="list-inside list-disc text-lg text-zinc-600 lg:text-xl">
                                     {{ features }}
                                         <li>{{ value }}</li>
                                     {{ /features }}
@@ -91,7 +91,7 @@
                             </div>
                         </a>
                     </div>
-                {{ /services_list }}
+                {{ /services_entries }}
             </div>
         </div>
     </section>

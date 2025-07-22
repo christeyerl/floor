@@ -15,6 +15,86 @@ tabs:
                 - required
       -
         display: Content
+        fields:
+          -
+            handle: hero
+            field:
+              type: section
+              display: Hero
+          -
+            handle: hero_heading
+            field:
+              type: text
+              display: Heading
+          -
+            handle: hero_subheading
+            field:
+              type: textarea
+              display: Subheading
+          -
+            handle: contact
+            field:
+              type: section
+              display: Form
+          -
+            handle: form_heading
+            field:
+              type: text
+              display: Heading
+          -
+            handle: form_subheading
+            field:
+              type: textarea
+              display: Subheading
+          -
+            handle: form
+            field:
+              max_items: 1
+              type: form
+              display: Form
+          -
+            handle: form_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Image
+          -
+            handle: contacts
+            field:
+              type: section
+              display: Contacts
+          -
+            handle: contacts_list
+            field:
+              type: grid
+              display: Contacts
+              mode: stacked
+              fields:
+                -
+                  handle: label
+                  field:
+                    type: text
+                    display: Label
+                -
+                  handle: values
+                  field:
+                    type: grid
+                    display: Values
+                    fields:
+                      -
+                        handle: value
+                        field:
+                          type: text
+                          display: Value
+                          width: 50
+                      -
+                        handle: link
+                        field:
+                          input_type: url
+                          type: text
+                          display: Link
+                          width: 50
   meta:
     display: Meta
     sections:

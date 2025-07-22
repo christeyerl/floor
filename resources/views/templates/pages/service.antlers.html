@@ -2,7 +2,7 @@
     {{ partial:sections.hero :heading="hero_heading" :subheading="hero_subheading" }}
 
     <section>
-        <div class="mx-auto max-w-7xl px-6 py-28">
+        <div class="mx-auto max-w-7xl px-6 pb-28">
             <div class="space-y-10">
                 <img
                     src="{{ main_image:url }}"
@@ -17,7 +17,15 @@
     {{ if gallery_list | length > 0 }}
         <section id="gallery">
             <div class="mx-auto max-w-7xl px-6 py-28">
-                <div class="columns-3 gap-20 space-y-20">
+                <div class="mx-auto max-w-lg space-y-3 text-center">
+                    <h2 class="text-3xl leading-tight! font-medium text-balance lg:text-5xl">
+                        Realizácie
+                    </h2>
+                    <p class="text-xl leading-normal! text-balance text-zinc-700 xl:text-2xl">
+                        Pozrite si naše realizácie a inšpirujte sa pre vašu podlahu.
+                    </p>
+                </div>
+                <div class="mt-20 columns-3 gap-20 space-y-20">
                     {{ gallery_list }}
                         <a
                             href="{{ url }}"
@@ -32,7 +40,7 @@
                                 />
                             </div>
                             {{ if alt }}
-                                <p class="mt-1 text-zinc-700">{{ alt }}</p>
+                                <p class="mt-1 text-sm text-zinc-700">{{ alt }}</p>
                             {{ /if }}
                         </a>
                     {{ /gallery_list }}

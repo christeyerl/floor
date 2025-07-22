@@ -37,68 +37,21 @@ tabs:
               type: section
               display: Services
           -
-            handle: services_list
+            handle: services_entries
             field:
-              type: grid
+              create: false
+              collections:
+                - pages
+              type: entries
               display: Services
-              mode: stacked
-              fields:
-                -
-                  handle: title
-                  field:
-                    type: text
-                    display: Title
-                -
-                  handle: description
-                  field:
-                    type: textarea
-                    display: Description
-                -
-                  handle: features
-                  field:
-                    type: list
-                    display: Features
-                -
-                  handle: image
-                  field:
-                    max_files: 1
-                    container: assets
-                    type: assets
-                    display: Image
-                -
-                  handle: link
-                  field:
-                    collections:
-                      - pages
-                    type: link
-                    display: Link
           -
             handle: cta
             field:
               type: section
               display: CTA
           -
-            handle: cta_heading
-            field:
-              type: text
-              display: Heading
-          -
-            handle: cta_subheading
-            field:
-              type: textarea
-              display: Subheading
-          -
-            handle: cta_link
-            field:
-              type: link
-              display: Link
-          -
-            handle: cta_image
-            field:
-              max_files: 1
-              container: assets
-              type: assets
-              display: Image
+            import: sections.cta
+            prefix: cta_
   meta:
     display: Meta
     sections:

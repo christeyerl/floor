@@ -23,3 +23,11 @@
         @apply hidden!;
     }
 }
+
+.chocolat-overlay {
+    background-color: black !important;
+}
+
+.grecaptcha-badge {
+    display: none !important;
+}

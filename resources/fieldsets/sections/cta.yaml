@@ -1,0 +1,24 @@
+title: Sections/CTA
+fields:
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+  -
+    handle: subheading
+    field:
+      type: textarea
+      display: Subheading
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Image
+  -
+    handle: link
+    field:
+      type: link
+      display: Link

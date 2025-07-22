@@ -15,6 +15,92 @@ tabs:
                 - required
       -
         display: Content
+        fields:
+          -
+            handle: hero
+            field:
+              type: section
+              display: Hero
+          -
+            handle: hero_heading
+            field:
+              type: text
+              display: Heading
+          -
+            handle: hero_subheading
+            field:
+              type: textarea
+              display: Subheading
+          -
+            handle: about
+            field:
+              type: section
+              display: About
+          -
+            handle: about_content
+            field:
+              type: markdown
+              display: Content
+          -
+            handle: about_image
+            field:
+              container: assets
+              type: assets
+              display: Image
+              max_files: 1
+          -
+            handle: stats
+            field:
+              type: section
+              display: Stats
+          -
+            handle: stats_heading
+            field:
+              type: text
+              display: Heading
+          -
+            handle: stats_list
+            field:
+              type: grid
+              display: Stats
+              mode: stacked
+              fields:
+                -
+                  handle: label
+                  field:
+                    type: text
+                    display: Label
+                    width: 50
+                -
+                  handle: value
+                  field:
+                    type: text
+                    display: Value
+                    width: 50
+                -
+                  handle: description
+                  field:
+                    type: textarea
+                    display: Description
+          -
+            handle: stats_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Image
+          -
+            handle: slider
+            field:
+              type: section
+              display: Slider
+          -
+            handle: slider_image
+            field:
+              container: assets
+              type: assets
+              display: Image
+              max_files: 1
   meta:
     display: Meta
     sections:

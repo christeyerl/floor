@@ -76,66 +76,13 @@ tabs:
               type: textarea
               display: Paragraph
           -
-            handle: services_list
+            handle: services_entries
             field:
-              mode: stacked
-              type: grid
+              collections:
+                - pages
+              type: entries
               display: Services
-              fields:
-                -
-                  handle: heading
-                  field:
-                    type: text
-                    display: Heading
-                -
-                  handle: description
-                  field:
-                    type: textarea
-                    display: Description
-                -
-                  handle: features
-                  field:
-                    type: list
-                    display: Features
-                -
-                  handle: image
-                  field:
-                    container: assets
-                    type: assets
-                    display: Image
-                    max_files: 1
-                -
-                  handle: link
-                  field:
-                    type: link
-                    display: Link
-          -
-            handle: cta
-            field:
-              type: section
-              display: CTA
-          -
-            handle: cta_heading
-            field:
-              type: text
-              display: Heading
-          -
-            handle: cta_subheading
-            field:
-              type: textarea
-              display: Paragraph
-          -
-            handle: cta_image
-            field:
-              max_files: 1
-              container: assets
-              type: assets
-              display: Image
-          -
-            handle: cta_link
-            field:
-              type: link
-              display: Link
+              create: false
           -
             handle: gallery
             field:
@@ -148,6 +95,14 @@ tabs:
               container: assets
               type: assets
               display: Gallery
+          -
+            handle: cta
+            field:
+              type: section
+              display: CTA
+          -
+            import: sections.cta
+            prefix: cta_
   meta:
     display: Meta
     sections:

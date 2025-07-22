@@ -12,6 +12,23 @@ tabs:
               required: true
               validate:
                 - required
+          -
+            handle: description
+            field:
+              type: textarea
+              display: Description
+          -
+            handle: features
+            field:
+              type: list
+              display: Features
+          -
+            handle: thumbnail
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Thumbnail
       -
         display: Content
         fields:
@@ -65,27 +82,8 @@ tabs:
               type: section
               display: CTA
           -
-            handle: cta_heading
-            field:
-              type: text
-              display: Heading
-          -
-            handle: cta_subheading
-            field:
-              type: textarea
-              display: Subheading
-          -
-            handle: cta_link
-            field:
-              type: link
-              display: Link
-          -
-            handle: cta_image
-            field:
-              container: assets
-              type: assets
-              display: Image
-              max_files: 1
+            import: sections.cta
+            prefix: cta_
   meta:
     display: Meta
     sections:

@@ -9,23 +9,20 @@
                     alt="{{ main_image:alt }}"
                     class="aspect-16/9 w-full object-cover"
                 />
-                <div class="text-2xl/normal text-zinc-700">{{ main_paragraph }}</div>
+                <div class="text-lg leading-normal! text-zinc-700 md:text-xl lg:text-2xl">{{ main_paragraph }}</div>
             </div>
         </div>
     </section>
-
     {{ if gallery_list | length > 0 }}
         <section id="gallery">
             <div class="mx-auto max-w-7xl px-6 py-28">
                 <div class="mx-auto max-w-lg space-y-3 text-center">
-                    <h2 class="text-3xl leading-tight! font-medium text-balance lg:text-5xl">
-                        Realizácie
-                    </h2>
+                    <h2 class="text-3xl leading-tight! font-medium text-balance lg:text-5xl">Realizácie</h2>
                     <p class="text-xl leading-normal! text-balance text-zinc-700 xl:text-2xl">
                         Pozrite si naše realizácie a inšpirujte sa pre vašu podlahu.
                     </p>
                 </div>
-                <div class="mt-20 columns-3 gap-20 space-y-20">
+                <div class="mt-20 gap-20 space-y-20 sm:columns-2 lg:columns-3">
                     {{ gallery_list }}
                         <a
                             href="{{ url }}"
@@ -34,6 +31,7 @@
                         >
                             <div class="overflow-hidden">
                                 <img
+                                    loading="lazy"
                                     src="{{ url }}"
                                     alt="{{ alt }}"
                                     class="w-full transition duration-500 hover:scale-105"
@@ -48,6 +46,5 @@
             </div>
         </section>
     {{ /if }}
-
     {{ partial:sections.cta :heading="cta_heading" :subheading="cta_subheading" :link="cta_link" :image="cta_image" }}
 </main>

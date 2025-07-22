@@ -1,7 +1,7 @@
 <main>
     <section id="hero">
         <div class="h-[calc(100vh-5.75rem)] lg:h-[calc(100vh-7rem)]">
-            <div class="grid h-full grid-cols-1 items-center md:grid-cols-2">
+            <div class="grid h-full grid-cols-1 items-center gap-y-5 md:grid-cols-2">
                 <div class="h-full">
                     <img
                         src="{{ hero_image:url }}"
@@ -11,7 +11,7 @@
                 </div>
                 <div class="px-8 xl:px-28 xl:py-20">
                     <div class="max-w-xl space-y-10">
-                        <h1 class="text-3xl leading-tight! font-medium lg:text-5xl xl:text-7xl text-balance">
+                        <h1 class="text-3xl leading-tight! font-medium text-balance lg:text-5xl xl:text-7xl">
                             {{ hero_heading }}
                         </h1>
                         <p class="text-xl leading-normal! text-balance text-zinc-700 xl:text-2xl">
@@ -27,7 +27,7 @@
     </section>
 
     <section id="about">
-        <div class="mx-auto max-w-7xl px-6 pt-28 lg:pt-56 pb-28">
+        <div class="mx-auto max-w-7xl px-6 pt-28 pb-28 lg:pt-56">
             <div class="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
                 <div>
                     <div class="w-[75%]">
@@ -106,6 +106,7 @@
                             class="chocolat"
                         >
                             <img
+                                loading="lazy"
                                 src="{{ url }}"
                                 alt="{{ alt }}"
                                 class="size-full object-cover"

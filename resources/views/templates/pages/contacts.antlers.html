@@ -3,10 +3,10 @@
 
     <section id="form">
         <div class="mx-auto max-w-7xl px-6 py-28">
-            <div class="grid grid-cols-2 items-center gap-20">
+            <div class="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-20">
                 <div class="space-y-10">
                     <div class="space-y-2">
-                        <h2 class="text-5xl/tight font-medium text-balance">
+                        <h2 class="text-3xl leading-tight! font-medium text-balance md:text-4xl lg:text-5xl">
                             {{ form_heading }}
                         </h2>
                         <p class="text-2xl text-balance text-zinc-700">
@@ -19,7 +19,7 @@
                     <img
                         src="{{ form_image:url }}"
                         alt="{{ form_image:alt }}"
-                        class="aspect-3/4 size-full object-cover"
+                        class="aspect-3/4 size-full object-cover max-h-[75vh]"
                     />
                 </div>
             </div>
@@ -28,7 +28,7 @@
 
     <section id="contacts">
         <div class="mx-auto max-w-7xl px-6 py-28">
-            <dl class="grid grid-cols-3 gap-20">
+            <dl class="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-20">
                 {{ contacts_list }}
                     <div class="space-y-2 text-center">
                         <dt class="text-xl font-medium">{{ label }}</dt>

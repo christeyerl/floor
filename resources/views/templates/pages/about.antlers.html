@@ -4,15 +4,15 @@
     <section id="about">
         <div class="bg-zinc-50">
             <div class="mx-auto max-w-7xl px-6 py-28">
-                <div class="grid grid-cols-5 items-center gap-20">
-                    <div class="col-span-2">
+                <div class="grid grid-cols-1 items-center gap-20 lg:grid-cols-5">
+                    <div class="lg:col-span-2">
                         <img
                             src="{{ about_image:url }}"
                             alt="{{ about_image:alt }}"
                             class="aspect-2/3 size-full object-cover"
                         />
                     </div>
-                    <div class="col-span-3">
+                    <div class="lg:col-span-3">
                         <div class="space-y-4 text-xl/normal text-zinc-700">
                             {{ about_content }}
                         </div>
@@ -24,17 +24,17 @@
 
     <section id="facts">
         <div class="mx-auto max-w-7xl px-6 py-28">
-            <div class="grid grid-cols-2 items-center gap-20">
-                <div class="space-y-10">
-                    <h2 class="text-5xl/tight font-medium text-balance">
+            <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-20">
+                <div class="space-y-10 max-lg:text-center">
+                    <h2 class="text-3xl leading-tight! font-medium text-balance md:text-4xl lg:text-5xl">
                         {{ stats_heading }}
                     </h2>
-                    <div class="grid grid-cols-2 gap-10">
+                    <div class="grid grid-cols-1 gap-10 max-lg:text-center sm:grid-cols-2">
                         {{ stats_list }}
                             <div>
                                 <span class="text-7xl font-medium text-zinc-300">{{ label }}</span>
                                 <p class="mt-6 text-xl font-medium text-zinc-900">{{ value }}</p>
-                                <p class="mt-2 text-zinc-700 text-balance">{{ description }}</p>
+                                <p class="mt-2 text-balance text-zinc-700">{{ description }}</p>
                             </div>
                         {{ /stats_list }}
                     </div>
@@ -43,7 +43,7 @@
                     <img
                         src="{{ stats_image:url }}"
                         alt="{{ stats_image:alt }}"
-                        class="aspect-3/4 size-full object-cover"
+                        class="aspect-3/4 size-full max-h-[75vh] object-cover"
                     />
                 </div>
             </div>

@@ -1,2 +1,10 @@
 title: Contact
 honeypot: address
+email:
+  -
+    id: mdeyxb4w
+    to: otorm@otorm.sk
+    reply_to: '{{ email }}'
+    subject: 'Správa z webu'
+    html: mails/contact
+    markdown: true

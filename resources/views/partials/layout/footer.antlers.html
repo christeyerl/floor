@@ -71,16 +71,16 @@
                         </li>
                     </ul>
                     <ul class="flex items-center gap-4">
-                        <li>
-                            <a href="/">
-                                {{ svg src="icons/social/instagram" class="size-6 fill-current hover:fill-delft" }}
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
-                                {{ svg src="icons/social/facebook" class="size-6 fill-current hover:fill-delft" }}
-                            </a>
-                        </li>
+                        {{ seo:links }}
+                            <li>
+                                <a
+                                    href="{{ url }}"
+                                    target="_blank"
+                                >
+                                    {{ svg :src="icon" class="size-6 fill-current hover:fill-delft" }}
+                                </a>
+                            </li>
+                        {{ /seo:links }}
                     </ul>
                 </div>
             </div>

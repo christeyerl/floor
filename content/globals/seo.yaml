@@ -1,5 +1,11 @@
 title: SEO
 data:
   og_image: open-graph.png
+  links:
+    -
+      id: mdeyn81q
+      icon: facebook
+      network: Facebook
+      url: 'https://www.facebook.com/p/Liate-podlahy-OTORM-100063609932222'
   sitemap_collections:
     - pages
